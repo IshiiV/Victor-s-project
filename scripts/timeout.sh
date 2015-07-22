@@ -83,7 +83,10 @@ fi
 
     # Be nice, post SIGTERM first.
     # The 'exit 0' below will be executed if any preceeding command fails.
-    echo "===== TIMED OUT after $timeout seconds ====="
+    if [ $timeout -ne 1 ]; then
+        SUFFIX="s"
+    fi
+    echo "===== TIMED OUT after $timeout second${SUFFIX} ====="
     kill -s SIGTERM $$ && kill -0 $$ || exit 0
     sleep $delay
     kill -s SIGKILL $$
