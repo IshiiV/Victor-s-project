@@ -1,0 +1,500 @@
+2015-07-24 16:27:05 [main] com.load.sample.HashAspect.<clinit>()
+INFO: ********** current forgetfulness policy: none
+2015-07-24 16:27:05 [main] com.load.sample.HashAspect.<clinit>()
+INFO: ************** current HashAspect heuristic val: 2
+2015-07-24 16:27:05 [main] org.apache.commons.cli.Options.get_aroundBody11$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:05 [main] com.load.sample.ListAspect.<clinit>()
+INFO: ********** current forgetfulness policy: none
+2015-07-24 16:27:05 [main] com.load.sample.ListAspect.<clinit>()
+INFO: ************** current ListAspect heuristic val: 2
+2015-07-24 16:27:05 [main] org.apache.commons.cli.PosixParser.add_aroundBody13$advice()
+INFO: Add invocation count: 1	
+2015-07-24 16:27:05 [main] org.apache.commons.cli.PosixParser.add_aroundBody13$advice()
+INFO:  org.apache.commons.cli.PosixParser.processOptionToken(PosixParser.java:217)
+	 org.apache.commons.cli.PosixParser.flten(PosixParser.java:140)
+	 org.apache.commons.cli.Parser.parse(Parser.java:161)
+	 org.apache.commons.cli.Parser.parse(Parser.java:85)
+	 org.dacapo.harness.CommandLineArgs.<init>(CommandLineArgs.java:135)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:106)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.apache.commons.cli.PosixParser.add_aroundBody11$advice()
+INFO: Add invocation count: 2	
+2015-07-24 16:27:05 [main] org.apache.commons.cli.PosixParser.add_aroundBody11$advice()
+INFO:  org.apache.commons.cli.PosixParser.processNonOptionToken(PosixParser.java:190)
+	 org.apache.commons.cli.PosixParser.flten(PosixParser.java:150)
+	 org.apache.commons.cli.Parser.parse(Parser.java:161)
+	 org.apache.commons.cli.Parser.parse(Parser.java:85)
+	 org.dacapo.harness.CommandLineArgs.<init>(CommandLineArgs.java:135)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:106)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.apache.commons.cli.PosixParser.add_aroundBody11$advice()
+INFO: Add invocation count: 3	
+2015-07-24 16:27:05 [main] org.apache.commons.cli.PosixParser.add_aroundBody11$advice()
+INFO:  org.apache.commons.cli.PosixParser.processNonOptionToken(PosixParser.java:190)
+	 org.apache.commons.cli.PosixParser.flten(PosixParser.java:150)
+	 org.apache.commons.cli.Parser.parse(Parser.java:161)
+	 org.apache.commons.cli.Parser.parse(Parser.java:85)
+	 org.dacapo.harness.CommandLineArgs.<init>(CommandLineArgs.java:135)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:106)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.apache.commons.cli.Options.get_aroundBody11$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:05 [main] org.apache.commons.cli.Options.get_aroundBody15$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:05 [main] org.apache.commons.cli.Option.add_aroundBody1$advice()
+INFO: Add invocation count: 1	
+2015-07-24 16:27:05 [main] org.apache.commons.cli.Option.add_aroundBody1$advice()
+INFO:  org.apache.commons.cli.Option.add(Option.java:474)
+	 org.apache.commons.cli.Option.processValue(Option.java:454)
+	 org.apache.commons.cli.Option.addValueForProcessing(Option.java:407)
+	 org.apache.commons.cli.Parser.processArgs(Parser.java:332)
+	 org.apache.commons.cli.Parser.processOption(Parser.java:393)
+	 org.apache.commons.cli.Parser.parse(Parser.java:199)
+	 org.apache.commons.cli.Parser.parse(Parser.java:85)
+	 org.dacapo.harness.CommandLineArgs.<init>(CommandLineArgs.java:135)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:106)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.apache.commons.cli.CommandLine.add_aroundBody7$advice()
+INFO: Add invocation count: 1	
+2015-07-24 16:27:05 [main] org.apache.commons.cli.CommandLine.add_aroundBody7$advice()
+INFO:  org.apache.commons.cli.CommandLine.addOption(CommandLine.java:356)
+	 org.apache.commons.cli.Parser.processOption(Parser.java:397)
+	 org.apache.commons.cli.Parser.parse(Parser.java:199)
+	 org.apache.commons.cli.Parser.parse(Parser.java:85)
+	 org.dacapo.harness.CommandLineArgs.<init>(CommandLineArgs.java:135)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:106)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.apache.commons.cli.CommandLine.add_aroundBody5$advice()
+INFO: Add invocation count: 2	
+2015-07-24 16:27:05 [main] org.apache.commons.cli.CommandLine.add_aroundBody5$advice()
+INFO:  org.apache.commons.cli.CommandLine.addArg(CommandLine.java:346)
+	 org.apache.commons.cli.Parser.parse(Parser.java:206)
+	 org.apache.commons.cli.Parser.parse(Parser.java:85)
+	 org.dacapo.harness.CommandLineArgs.<init>(CommandLineArgs.java:135)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:106)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.dacapo.harness.CommandLineArgs.add_aroundBody1$advice()
+INFO: Add invocation count: 1	
+2015-07-24 16:27:05 [main] org.dacapo.harness.CommandLineArgs.add_aroundBody1$advice()
+INFO:  org.dacapo.harness.CommandLineArgs.<init>(CommandLineArgs.java:182)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:106)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody5$advice()
+INFO: Add invocation count: 1	
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody5$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:174)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 2	
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 3	
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 4	
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 5	
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 6	
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 7	
+2015-07-24 16:27:05 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config.get_aroundBody23$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config.get_aroundBody23$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config$Size.get_aroundBody7$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config.get_aroundBody23$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config$Size.get_aroundBody7$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config.get_aroundBody23$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config$Size.get_aroundBody7$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody5$advice()
+INFO: Add invocation count: 8	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody5$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:174)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 9	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 10	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 11	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 12	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 13	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 14	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config.get_aroundBody23$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config.get_aroundBody23$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config$Size.get_aroundBody7$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config.get_aroundBody23$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config$Size.get_aroundBody7$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config.get_aroundBody23$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config$Size.get_aroundBody7$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody5$advice()
+INFO: Add invocation count: 15	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody5$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:174)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 16	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 17	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 18	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 19	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 20	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 21	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 22	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 23	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 24	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 25	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 26	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 27	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 28	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 29	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO: Add invocation count: 30	
+2015-07-24 16:27:06 [main] org.dacapo.parser.ConfigFile.add_aroundBody7$advice()
+INFO:  org.dacapo.parser.ConfigFile.sizeClause(ConfigFile.java:187)
+	 org.dacapo.parser.ConfigFile.sizeSpec(ConfigFile.java:145)
+	 org.dacapo.parser.ConfigFile.configFile(ConfigFile.java:40)
+	 org.dacapo.parser.Config.parse(Config.java:212)
+	 org.dacapo.harness.TestHarness.<init>(TestHarness.java:274)
+	 org.dacapo.harness.TestHarness.main(TestHarness.java:140)
+	 Harness.main(Harness.java:17)
+
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config.get_aroundBody23$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config.get_aroundBody23$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config.get_aroundBody23$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] org.dacapo.parser.Config.get_aroundBody23$advice()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:06 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
+INFO: [HashAspect/loadtime/] Get call invoked.
+2015-07-24 16:27:07 [main] com.load.sample.HashAspect.ajc$around$com_load_sample_HashAspect$2$f50f3237()
