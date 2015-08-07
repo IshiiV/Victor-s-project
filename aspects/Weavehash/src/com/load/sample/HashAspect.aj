@@ -1,8 +1,14 @@
 package com.load.sample;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Map;
 import java.util.Random;
-import org.pmw.tinylog.Logger;
+
+import org.pmw.tinylog.writers.FileWriter;
+import org.pmw.tinylog.*;
 
 aspect HashAspect perthis(putCall(Map, Object, Object)) {
 
@@ -13,12 +19,13 @@ aspect HashAspect perthis(putCall(Map, Object, Object)) {
 
     // what is our forgetfulness policy right now?
     private static int currentHeuristic;
+    private int nesting = 0;
 
     // Bytes inserted in the datastructure, used as a threshold for enabling forgetting
     private long totalBytesInserted = 0;
 
     static {
-	String prop = System.getProperty("forgetful.policy", "none");
+	String prop = System.getProperty("forgetful.policy", "random");
 	Logger.info("********** current forgetfulness policy: " + prop);
 	currentHeuristic = ForgetfulHeuristic.fromString(prop);
 	Logger.info("************** current HashAspect heuristic val: " + currentHeuristic);
@@ -44,7 +51,35 @@ aspect HashAspect perthis(putCall(Map, Object, Object)) {
 
     // advice to insert 'instead of' get calls
     Object around(Map hm, Object key): getCall(hm, key) {
+    nesting ++;
 	Logger.info("[HashAspect] Get call invoked.");
+	
+	
+	
+	 //long etime=System.currentTimeMillis();
+	nesting--;
+	StringBuilder info = new StringBuilder();
+	for (int i=0;i<nesting;i++) {
+		info.append(" ");
+	}
+	//info.append(thisJoinPoint+" took "+(etime-stime)+"ms\n");
+	
+	StringWriter sw = new StringWriter();
+	new Throwable().printStackTrace(new PrintWriter(sw));
+	
+	String [] methods = sw.toString().split("at");
+	ArrayList<String> methodsList = new ArrayList<String>(Arrays.asList(methods));
+	methodsList.remove(0);
+	methodsList.remove(0);
+	for(String s : methodsList){
+		info.append(s);
+	}
+	
+	//info.append(sw.toString());
+	Logger.info(info);
+	
+		
+	
 	return proceed(hm, key);
     }
 
