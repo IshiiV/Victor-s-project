@@ -30,23 +30,28 @@ callSites = []
 with open(logfilename) as logfile:
     for line in logfile:
         if buildingCallSite:
-            if not line.strip():
-                # empty line
+            if 'DATA FORGOTTEN' in line:
+                # end of call site
                 buildingCallSite = False
+                dataForgotten = int((line.strip().split())[2])
                 # add this call site to list
                 if currentCallSite not in callSites:
+                    #and dataForgotten == 1:
                     callSites.append(currentCallSite)
                 # then init empty new currentCallSite
                 currentCallSite = ""
             else:
                 # add this line to currentCallSite
-                if (':' in line):
-                    currentMethod = re.search('(\S+java\S+)', line)
-                    if currentMethod:
-                        currentCallSite = currentCallSite + currentMethod.group(0)
+                currentMethod = re.search('(\S+(java|Native Method|Unkown Source)\S+)', line)
+                print "line is:" + line
+                
+                if currentMethod:
+                    currentCallSite = currentCallSite + currentMethod.group(0)
+                    print "current call site is: " + currentCallSite
 
-        if "advice()" in line:
-            #print "found advice: " + line
+        if "around" in line:
+            # jsinger - is this the most robust aspect RegExp?
+            print "found advice: " + line
             buildingCallSite = True
 
 
