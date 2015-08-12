@@ -102,7 +102,7 @@ aspect ListAspect perthis(addCall(List,Object)) {
 		StringWriter sw = new StringWriter();
 		new Throwable().printStackTrace(new PrintWriter(sw));
 		
-		String [] methods = sw.toString().split("at");
+		String [] methods = sw.toString().split("at ");
 		ArrayList<String> methodsList = new ArrayList<String>(Arrays.asList(methods));
 		methodsList.remove(0);
 		methodsList.remove(0);
