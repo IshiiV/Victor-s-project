@@ -55,6 +55,7 @@ aspect ListAspect perthis(addCall(List,Object)) {
 		//long stime=System.currentTimeMillis();
     	
         boolean retVal = true; // always returns true
+	boolean dataForgotten = false;  // do we forget any info?
         numCalls++;
         /*
         System.out.println(numCalls);
@@ -67,13 +68,26 @@ aspect ListAspect perthis(addCall(List,Object)) {
         //Logger.info("Object to add: " + e + " total size of datastructure: " + totalSize);
         switch(currentHeuristic) {
         case ForgetfulHeuristic.RANDOM_DROP_CURRENT:
-            if (!randomlyForget()) retVal = proceed(list,e);
+            if (!randomlyForget()) {
+		retVal = proceed(list,e);
+		dataForgotten = false;
+	    }
+	    else {
+		dataForgotten = true;
+	    }
             break;
         case ForgetfulHeuristic.RANDOM_DROP_OTHER:
-            if (randomlyForget()) dropRandomOther(list,e);
+            if (randomlyForget()) {
+		dropRandomOther(list,e);
+		dataForgotten = true;
+	    }
+	    else {
+		dataForgotten = false;
+	    }
             retVal = proceed(list,e);         
         case ForgetfulHeuristic.NONE:
         default:
+	    dataForgotten = false;
             retVal = proceed(list, e);
         }
         
@@ -84,7 +98,7 @@ aspect ListAspect perthis(addCall(List,Object)) {
 			info.append(" ");
 		}
 		//info.append(thisJoinPoint+" took "+(etime-stime)+"ms\n");
-		
+
 		StringWriter sw = new StringWriter();
 		new Throwable().printStackTrace(new PrintWriter(sw));
 		
@@ -95,6 +109,8 @@ aspect ListAspect perthis(addCall(List,Object)) {
 		for(String s : methodsList){
 			info.append(s);
 		}
+
+		info.append("DATA FORGOTTEN: " + (dataForgotten?1:0));
 		
 		//info.append(sw.toString());
 		Logger.info(info);
